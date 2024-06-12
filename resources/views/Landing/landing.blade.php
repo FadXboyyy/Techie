@@ -10,8 +10,8 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="{{ asset('assets/img/favicon.png') }}" rel="icon" />
-    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
+    <link href="{{ asset('assets/landing/img/favicon.png') }}" rel="icon" />
+    <link href="{{ asset('assets/landing/img/apple-touch-icon.png') }}" rel="apple-touch-icon" />
 
     <!-- Google Fonts -->
     <link
@@ -19,15 +19,15 @@
         rel="stylesheet" />
 
     <!-- Vendor CSS Files -->
-    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
-    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/aos/aos.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet" />
 
     <!-- Template Main CSS File -->
-    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet" />
+    <link href="{{ asset('assets/landing/css/style.css') }}" rel="stylesheet" />
 
 </head>
 
@@ -37,7 +37,7 @@
         <div class="container d-flex align-items-center justify-content-between">
             <h1 class="logo"><a href="index.html">Techie</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            <!-- <a href="index.html" class="logo"><img src="assets/landing/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -75,7 +75,8 @@
                     </div>
                 </div>
                 <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
-                    <img src="{{ asset('assets/img/hero-img.png') }}" class="img-fluid animated" alt="" />
+                    <img src="{{ asset('assets/landing/img/hero-img.png') }}" class="img-fluid animated"
+                        alt="" />
                 </div>
             </div>
         </div>
@@ -88,7 +89,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-                        <img src="{{ asset('assets/img/about.jpg') }}" class="img-fluid" alt="" />
+                        <img src="{{ asset('assets/landing/img/about.jpg') }}" class="img-fluid" alt="" />
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
                         <h3>Voluptatem dignissimos provident quasi corporis</h3>
@@ -338,7 +339,8 @@
                         </div>
                     </div>
                     <div class="image col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="{{ asset('assets/img/features.svg') }}" alt="" class="img-fluid" />
+                        <img src="{{ asset('assets/landing/img/features.svg') }}" alt=""
+                            class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -370,7 +372,7 @@
                                     risus at semper.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="{{ asset('assets/img/testimonials/testimonials-1.jpg') }}"
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-1.jpg') }}"
                                     class="testimonial-img" alt="" />
                                 <h3>Saul Goodman</h3>
                                 <h4>Ceo &amp; Founder</h4>
@@ -388,7 +390,7 @@
                                     culpa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="{{ asset('assets/img/testimonials/testimonials-2.jpg') }}"
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-2.jpg') }}"
                                     class="testimonial-img" alt="" />
                                 <h3>Sara Wilsson</h3>
                                 <h4>Designer</h4>
@@ -405,7 +407,7 @@
                                     eram duis noster aute amet eram fore quis sint minim.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="{{ asset('assets/img/testimonials/testimonials-3.jpg') }}"
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-3.jpg') }}"
                                     class="testimonial-img" alt="" />
                                 <h3>Jena Karlis</h3>
                                 <h4>Store Owner</h4>
@@ -422,7 +424,7 @@
                                     veniam ipsum anim magna sunt elit fore quem dolore labore.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="{{ asset('assets/img/testimonials/testimonials-4.jpg') }}"
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-4.jpg') }}"
                                     class="testimonial-img" alt="" />
                                 <h3>Matt Brandon</h3>
                                 <h4>Freelancer</h4>
@@ -440,7 +442,7 @@
                                     culpa.
                                     <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                                 </p>
-                                <img src="{{ asset('assets/img/testimonials/testimonials-5.jpg') }}"
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-5.jpg') }}"
                                     class="testimonial-img" alt="" />
                                 <h3>John Larson</h3>
                                 <h4>Entrepreneur</h4>
@@ -481,14 +483,14 @@
                 <div class="row portfolio-container">
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-1.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-1.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
                                 <p>App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-1.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-1.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -498,14 +500,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-2.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-2.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-2.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-2.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -515,14 +517,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-3.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-3.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>App 2</h4>
                                 <p>App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-3.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-3.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -532,14 +534,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-4.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-4.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Card 2</h4>
                                 <p>Card</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-4.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-4.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -549,14 +551,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-5.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-5.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Web 2</h4>
                                 <p>Web</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-5.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-5.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -566,14 +568,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-app">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-6.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-6.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>App 3</h4>
                                 <p>App</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-6.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-6.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -583,14 +585,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-7.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-7.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Card 1</h4>
                                 <p>Card</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-7.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-7.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -600,14 +602,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-card">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-8.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-8.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Card 3</h4>
                                 <p>Card</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-8.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-8.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -617,14 +619,14 @@
 
                     <div class="col-lg-4 col-md-6 portfolio-item filter-web">
                         <div class="portfolio-wrap">
-                            <img src="{{ asset('assets/img/portfolio/portfolio-9.jpg') }}" class="img-fluid"
+                            <img src="{{ asset('assets/landing/img/portfolio/portfolio-9.jpg') }}" class="img-fluid"
                                 alt="" />
                             <div class="portfolio-info">
                                 <h4>Web 3</h4>
                                 <p>Web</p>
                             </div>
                             <div class="portfolio-links">
-                                <a href="{{ asset('assets/img/portfolio/portfolio-9.jpg') }}"
+                                <a href="{{ asset('assets/landing/img/portfolio/portfolio-9.jpg') }}"
                                     data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i
                                         class="bx bx-plus"></i></a>
                                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
@@ -1015,16 +1017,16 @@
     <div id="preloader"></div>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset('assets/vendor/purecounter/purecounter_vanilla.js') }}"></script>
-    <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/purecounter/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/landing/vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/landing/js/main.js') }}"></script>
 </body>
 
 </html>
