@@ -11,7 +11,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld8mQEqAAAAAMkshiVfa2Q0-wGKUNNCbENMRxau"></script>
 
 
     <!-- Scripts -->
@@ -29,9 +29,14 @@
     @livewireScripts
 
     <script>
-        document.getElementById('refreshCaptcha').addEventListener('click', function() {
-            document.querySelector('img[alt="captcha"]').src = '{{ captcha_src() }}' + Math.random();
-        });
+        function onClick(e) {
+            e.preventDefault();
+            grecaptcha.enterprise.ready(async () => {
+                const token = await grecaptcha.enterprise.execute('6Ld8mQEqAAAAAMkshiVfa2Q0-wGKUNNCbENMRxau', {
+                    action: 'LOGIN'
+                });
+            });
+        }
     </script>
 </body>
 

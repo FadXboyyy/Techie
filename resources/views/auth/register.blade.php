@@ -33,10 +33,10 @@
                     name="password_confirmation" required autocomplete="new-password" />
             </div>
 
-            {{-- <div class="mt-4">
-                {!! captcha_img() !!}
-                <x-input id="captcha" type="text" class="block mt-1 w-full" name="captcha" />
-            </div> --}}
+            <div class="mt-4">
+                {!! NoCaptcha::display() !!}
+
+            </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
                 <div class="mt-4">
@@ -71,10 +71,13 @@
                     {{ __('Already registered?') }}
                 </a>
 
+
                 <x-button class="ms-4">
                     {{ __('Register') }}
                 </x-button>
+
             </div>
         </form>
+        {!! NoCaptcha::renderJs() !!}
     </x-authentication-card>
 </x-guest-layout>

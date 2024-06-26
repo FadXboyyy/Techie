@@ -48,7 +48,8 @@
                         <a class="nav-link scrollto" href="#portfolio">Portfolio</a>
                     </li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+
+
                     <li>
                         @if (Route::has('login'))
                             <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
