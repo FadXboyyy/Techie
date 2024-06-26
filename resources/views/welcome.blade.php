@@ -1,5 +1,4 @@
-@extends('landing.landing')
-
+@extends('layouts.landing.landing')
 
 @section('content')
 @endsection
