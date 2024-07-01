@@ -49,27 +49,21 @@
                     </li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
 
-
                     <li>
                         @if (Route::has('login'))
-                            <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                                @auth
-                                    <a href="{{ url('/admin') }}"
-                                        class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
-                                @else
-                                    <a href="{{ route('login') }}"
-                                        class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log
+                            @auth
+                                <a href="{{ url('/admin') }}"
+                                    class="font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
+                            @else
+                                <div>
+                                    <a class="nav-link scrollto" href="{{ route('login') }}">Log
                                         in</a>
+                                </div>
 
-                                    @if (Route::has('register'))
-                                        <a href="{{ route('register') }}"
-                                            class="ml-4 font-semibold text-gray-600 hover:text-gray-900 focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                                    @endif
-                                @endauth
-                            </div>
+                            @endauth
                         @endif
-
                     </li>
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>
@@ -314,173 +308,6 @@
             </div>
         </section>
         <!-- End Services Section -->
-
-        <!-- ======= Features Section ======= -->
-        <section id="features" class="features">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Features</h2>
-                    <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat sit in iste officiis commodi quidem hic quas.
-                    </p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
-                        <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                            <i class="bx bx-receipt"></i>
-                            <h4>Est labore ad</h4>
-                            <p>
-                                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
-                                laboris nisi ut aliquip
-                            </p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-                            <i class="bx bx-cube-alt"></i>
-                            <h4>Harum esse qui</h4>
-                            <p>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                                qui officia deserunt
-                            </p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-                            <i class="bx bx-images"></i>
-                            <h4>Aut occaecati</h4>
-                            <p>
-                                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
-                                maiores omnis facere
-                            </p>
-                        </div>
-                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
-                            <i class="bx bx-shield"></i>
-                            <h4>Beatae veritatis</h4>
-                            <p>
-                                Expedita veritatis consequuntur nihil tempore laudantium vitae
-                                denat pacta
-                            </p>
-                        </div>
-                    </div>
-                    <div class="image col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="{{ asset('assets/landing/img/features.svg') }}" alt=""
-                            class="img-fluid" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End Features Section -->
-
-        <!-- ======= Testimonials Section ======= -->
-        <section id="testimonials" class="testimonials section-bg">
-            <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Testimonials</h2>
-                    <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat sit in iste officiis commodi quidem hic quas.
-                    </p>
-                </div>
-
-                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Proin iaculis purus consequat sem cure digni ssim donec
-                                    porttitora entum suscipit rhoncus. Accusantium quam,
-                                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
-                                    risus at semper.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-1.jpg') }}"
-                                    class="testimonial-img" alt="" />
-                                <h3>Saul Goodman</h3>
-                                <h4>Ceo &amp; Founder</h4>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Export tempor illum tamen malis malis eram quae irure esse
-                                    labore quem cillum quid cillum eram malis quorum velit fore
-                                    eram velit sunt aliqua noster fugiat irure amet legam anim
-                                    culpa.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-2.jpg') }}"
-                                    class="testimonial-img" alt="" />
-                                <h3>Sara Wilsson</h3>
-                                <h4>Designer</h4>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Enim nisi quem export duis labore cillum quae magna enim
-                                    sint quorum nulla quem veniam duis minim tempor labore quem
-                                    eram duis noster aute amet eram fore quis sint minim.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-3.jpg') }}"
-                                    class="testimonial-img" alt="" />
-                                <h3>Jena Karlis</h3>
-                                <h4>Store Owner</h4>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                                    multos export minim fugiat minim velit minim dolor enim duis
-                                    veniam ipsum anim magna sunt elit fore quem dolore labore.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-4.jpg') }}"
-                                    class="testimonial-img" alt="" />
-                                <h3>Matt Brandon</h3>
-                                <h4>Freelancer</h4>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-
-                        <div class="swiper-slide">
-                            <div class="testimonial-item">
-                                <p>
-                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                                    aliqua veniam tempor noster veniam enim culpa labore duis
-                                    sunt culpa nulla illum cillum fugiat legam esse veniam
-                                    culpa.
-                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                                </p>
-                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-5.jpg') }}"
-                                    class="testimonial-img" alt="" />
-                                <h3>John Larson</h3>
-                                <h4>Entrepreneur</h4>
-                            </div>
-                        </div>
-                        <!-- End testimonial item -->
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section>
-        <!-- End Testimonials Section -->
-
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
             <div class="container" data-aos="fade-up">
@@ -662,6 +489,173 @@
             </div>
         </section>
         <!-- End Portfolio Section -->
+        <!-- ======= Features Section ======= -->
+        <section id="features" class="features">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Features</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+                        <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+                            <i class="bx bx-receipt"></i>
+                            <h4>Est labore ad</h4>
+                            <p>
+                                Consequuntur sunt aut quasi enim aliquam quae harum pariatur
+                                laboris nisi ut aliquip
+                            </p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                            <i class="bx bx-cube-alt"></i>
+                            <h4>Harum esse qui</h4>
+                            <p>
+                                Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt
+                            </p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                            <i class="bx bx-images"></i>
+                            <h4>Aut occaecati</h4>
+                            <p>
+                                Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut
+                                maiores omnis facere
+                            </p>
+                        </div>
+                        <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="400">
+                            <i class="bx bx-shield"></i>
+                            <h4>Beatae veritatis</h4>
+                            <p>
+                                Expedita veritatis consequuntur nihil tempore laudantium vitae
+                                denat pacta
+                            </p>
+                        </div>
+                    </div>
+                    <div class="image col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="{{ asset('assets/landing/img/features.svg') }}" alt=""
+                            class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Features Section -->
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="testimonials section-bg">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
+                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
+                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                        Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+
+                <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Proin iaculis purus consequat sem cure digni ssim donec
+                                    porttitora entum suscipit rhoncus. Accusantium quam,
+                                    ultricies eget id, aliquam eget nibh et. Maecen aliquam,
+                                    risus at semper.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-1.jpg') }}"
+                                    class="testimonial-img" alt="" />
+                                <h3>Saul Goodman</h3>
+                                <h4>Ceo &amp; Founder</h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Export tempor illum tamen malis malis eram quae irure esse
+                                    labore quem cillum quid cillum eram malis quorum velit fore
+                                    eram velit sunt aliqua noster fugiat irure amet legam anim
+                                    culpa.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-2.jpg') }}"
+                                    class="testimonial-img" alt="" />
+                                <h3>Sara Wilsson</h3>
+                                <h4>Designer</h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Enim nisi quem export duis labore cillum quae magna enim
+                                    sint quorum nulla quem veniam duis minim tempor labore quem
+                                    eram duis noster aute amet eram fore quis sint minim.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-3.jpg') }}"
+                                    class="testimonial-img" alt="" />
+                                <h3>Jena Karlis</h3>
+                                <h4>Store Owner</h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                                    multos export minim fugiat minim velit minim dolor enim duis
+                                    veniam ipsum anim magna sunt elit fore quem dolore labore.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-4.jpg') }}"
+                                    class="testimonial-img" alt="" />
+                                <h3>Matt Brandon</h3>
+                                <h4>Freelancer</h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-item">
+                                <p>
+                                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                                    aliqua veniam tempor noster veniam enim culpa labore duis
+                                    sunt culpa nulla illum cillum fugiat legam esse veniam
+                                    culpa.
+                                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                                </p>
+                                <img src="{{ asset('assets/landing/img/testimonials/testimonials-5.jpg') }}"
+                                    class="testimonial-img" alt="" />
+                                <h3>John Larson</h3>
+                                <h4>Entrepreneur</h4>
+                            </div>
+                        </div>
+                        <!-- End testimonial item -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- End Testimonials Section -->
+
+
 
         <!-- ======= Pricing Section ======= -->
         <section id="team" class="team section-bg">

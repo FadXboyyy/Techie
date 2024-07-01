@@ -14,6 +14,9 @@
     <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld8mQEqAAAAAMkshiVfa2Q0-wGKUNNCbENMRxau"></script>
 
 
+
+
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 

@@ -3,7 +3,7 @@
         <x-slot name="logo">
             <x-authentication-card-logo />
         </x-slot>
-
+        <h1 class="text-center">REGISTER</h1>
         <x-validation-errors class="mb-4" />
 
         <form method="POST" action="{{ route('register') }}">
@@ -35,7 +35,6 @@
 
             <div class="mt-4">
                 {!! NoCaptcha::display() !!}
-
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())

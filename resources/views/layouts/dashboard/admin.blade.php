@@ -208,8 +208,16 @@
                                     <span
                                         class="mr-2 d-none d-lg-inline text-gray-600 small">{{ auth()->user()->name }}
                                     </span>
-                                    <img class="img-profile rounded-circle"
-                                        src="{{ asset('/assets/admin/img/undraw_profile.svg') }}">
+                                    @if (auth()->user()->profile_photo_path != null)
+                                        <img src="{{ asset('storage/' . auth()->user()->profile_photo_path) }}"
+                                            class="rounded-circle object-cover" width="40px" height="40px">
+                                    @else
+                                        <img src="{{ asset('assets/admin/img/undraw_profile.svg') }}" alt=""
+                                            class="rounded-circle object-cover" width="40px" height="40px">
+                                    @endif
+
+
+
                                 </a>
                             @else
                         @endif
